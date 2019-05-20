@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Fk64fVGBQUfozFYyEYnBn8aB2Ft9WRpO"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/Heatmap/2.0/src/Heatmap_min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js"></script>
+    <link rel="stylesheet" href="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.css" />
+    <!--加载检索信息窗口-->
+    <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.js"></script>
+    <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.css" />
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_876654_j2qbj4p1wdo.css">
+    <script type="text/javascript" src="http://api.map.baidu.com/library/GeoUtils/1.2/src/GeoUtils_min.js"></script>
+    <script src="static/demo/echarts.js"></script>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+      }
+      img{
+        border:none;
+      }
+      body{
+        width: 1920px;
+        height: 1070px;
+        color: #fff;
+        font-size: 14px;
+        overflow: auto;
+        overflow-x: hidden;
+        margin:0 auto;
+        font-family: SimSun,"Arial Narrow",HELVETICA;
+        background:url(static/images/bg.jpg) no-repeat center top #0f1d3a;
+        background-size:100%;
+      }
+      a{
+        color: #fff;
+        text-decoration: none;
+      }
+      article,aside,dialog,footer,header,section,footer,nav,figure,menu,main{display:block}
+      .cl:after{
+        content: '';
+        display: block;
+        clear: both;
+        width: 0;
+        height: 0;
+        visibility: hidden;
+      }
+      .key{
+        font-family: '微软雅黑';
+        line-height: 12px;
+      }
+      .key span{
+        text-transform: Uppercase;
+        font-size:8px;
+      }
+      .cl{
+        zoom: 1;
+      }
+      .info-title{
+        width: 200px;
+        color: #0e74e3;
+        font-size: 16px;
+        font-weight:bold;
+      }
+      .marker-info{
+        color:#666;
+      }
+      @font-face {
+        font-family: 'DS';
+        src: url("./static/ds-digital.woff.woff"),
+             url("./static/ds-digital.woff.ttf");
+      }
+    </style>
+  </head>
+  <body>
+    <div id="web">
+      <router-view></router-view>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
